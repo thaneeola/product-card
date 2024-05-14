@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+  --Font-size: 14px;
+}
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: var(--Cream);
+}
+.container {
+  width: 300px;
+  border-radius: 16px;
+  display: flex;
+  margin:50px auto;
+  align-items: center;
+  justify-content: center;
+ /* height: 400px; */
+  flex-direction: column;
+  background-color: var(--White);
+}
+.text {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+.img {
+  display: none;
+  border-top-left-radius:10px;
+  border-bottom-left-radius: 10px;
+}
+.img2{
+    width: 100%;
+    border-top-left-radius:10px;
+    border-top-right-radius: 10px;
+}
+p {
+  color: var(--Dark-grayish-blue);
+  font-size: var(--Font-size);
+  font-weight: 500;
+  line-height: 25px;
+  font-family: "Montserrat", sans-serif;
+}
+.Perfume {
+  letter-spacing: 5px;
+  font-size: var(--Font-size);
+  font-family: "Montserrat", sans-serif;
+  color: var(--Dark-grayish-blue);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+h1 {
+  font-weight: 700;
+  line-height: 35px;
+  font-size: calc(var(--Font-size) * 2.5);
+  font-family: "Fraunces", serif;
+  color: var(--Very-dark-blue);
+}
+.price {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.price1 {
+  color: var(--Dark-cyan);
+  font-size: calc(var(--Font-size) * 2);
+  font-weight: 700;
+  font-family: "Fraunces", serif ;
+}
+.price2 {
+  text-decoration: line-through;
+}
+button{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-block: 16px;
+    border-radius: 7px;
+    border: none;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+}
+@media screen and (min-width:768px) {
+    .container{
+       width: 700px;
+      flex-direction: row;
+   
+      }
+      .text{
+        width: 600px;
+      }
+      .img2{
+        display: none;
+      }
+      .img{
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+}
